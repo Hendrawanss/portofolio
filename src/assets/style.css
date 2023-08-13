@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+    font-family: 'Lato', 'Open Sans', 'Helvetica Neue', sans-serif;
+}

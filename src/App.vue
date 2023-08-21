@@ -12,17 +12,18 @@ const setPageName = (name) =>{
 </script>
 
 <template>
-  <div class="rounded-lg p-3">
     <HeaderView :page="pageName"/>
 
-    <RouterView @pageName="setPageName" v-slot="{ Component }">
-      <Transition name="slide-fade">
-        <Component :is="Component" />
-      </Transition>
-    </RouterView>
+    <div class="px-3">
+      <RouterView @pageName="setPageName" v-slot="{ Component }">
+        <Transition name="slide-fade">
+          <Component :is="Component" />
+        </Transition>
+      </RouterView>
+      
+      <FooterView />
+    </div>
 
-    <FooterView />
-  </div>
 </template>
 
 <style scoped>

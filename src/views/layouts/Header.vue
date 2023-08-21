@@ -13,9 +13,9 @@ const toggleNavbar = () => {
 </script>
 
 <template>
-  <div class="flex flex-wrap pb-5">
+  <div class="sticky top-0 z-10 flex flex-wrap bg-slate-700 md:bg-slate-800 mb-2 md:mb-0">
     <div class="w-full">
-      <nav class="relative flex flex-wrap items-center justify-between px-2 rounded">
+      <nav class="relative flex flex-wrap items-center justify-between p-3 rounded">
         <div class="container mx-auto flex flex-wrap items-center justify-between">
           <div
             class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
